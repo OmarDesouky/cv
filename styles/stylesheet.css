@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.fix-clear {
+  clear: both;
+}
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.highlight a {
+  color: #d65f41;
+}
+
+.first {
+  background-color: #24252a;
+  padding-bottom: 20px;
+}
+
+.logotitle {
+  margin-left: 10.5%;
+  color: #edf0f1;
+  font-family: "Montserrat" sans-serif;
+  font-size: 18px;
+  position: relative;
+  animation-name: logoTitleMove;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logoTitleMove {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  padding-bottom: 7px;
+  background-color: #242529;
+}
+
+.nav-button {
+  display: flex;
+}
+
+.logo {
+  cursor: pointer;
+  height: 85px;
+  width: 122px;
+  border-radius: 20px;
+  position: relative;
+  animation-name: logoMove;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logoMove {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.nav_links {
+  list-style: none;
+  margin-top: 8px;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+  padding: 10px;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.7);
+}
+
+.content img {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  background: url(../images/home2.jpg) no-repeat 0 -300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(1.8px);
+  min-height: 500px;
+  text-align: center;
+}
+
+#main-title {
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.6em;
+  padding-top: 120px;
+  color: #ffffff;
+}
+
+/* New Collection */
+
+#collection {
+  padding: 20px;
+  align-items: center;
+  overflow: hidden;
+  margin-left: 67px;
+}
+
+#collection .collection-title , #about h3 , .blouse-jeans .blouse-jeans-title {
+  text-align: center;
+  font-family: Cormorant Garamond, Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#collection .line , .line{
+  height: 1.7px;
+  background-color: #242529;
+  width: 40%;
+  margin: 50px auto;
+}
+
+.blouse-jeans .line {
+  height: 1.7px;
+  background-color: #242529;
+  width: 20%;
+  margin: 30px auto;
+}
+
+#collection .boxes  {
+
+  float: left;
+  margin-top: 25px;
+  margin-left:auto;
+  
+  
+}
+
+#collection .boxes img , .blouse-jeans div img {
+  
+  height: 230px;
+  border-radius: 25px;
+  box-shadow: #666769 2px 1px 2px;
+  
+}
+
+#collection .boxes .inside , .blouse-jeans .boxes .inside  {
+  float: right;
+  padding: 12px;
+  margin-top: 30px;
+
+}
+
+#collection .boxes .inside h1 {
+  margin-bottom: 5px;
+  font-family: Cormorant Garamond, Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  
+}
+
+#collection .boxes .inside .s-line , .blouse-jeans .boxes .inside .s-line{
+  background-color: #242529;
+  height: 1.2px;
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+/* Blouse And Jeans */
+
+.blouse-jeans{
+  margin-top: 70px;
+  margin-left: 67px;
+ 
+}
+
+.blouse-jeans .boxes  {
+float: left;
+
+}
+
+.img4{
+  width:186px
+}
+
+/*  About us */
+
+#about{
+  
+  width: 70%;
+  margin: 100px auto 40px;
+  line-height: 1.8;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: rgba(241, 246, 247);
+  overflow: hidden;
+  padding: 25px;
+  font-size: 17px;
+  border-radius: 25px;
+  
+}
+/* Items */
+
+#items {
+  margin-top: 30px;
+}
+
+.form {
+  border: 1px solid #24252a;
+  border-radius: 25px;
+  padding: 25px;
+  width: 35%;
+  margin: auto;
+  background-color: #47494e;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.contact .box {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.contact input {
+  padding: 5px;
+  border-radius: 0 25px 25px 0;
+  width: 90%;
+  border: none;
+  color: #0f1014;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 25px;
+  border-top: #d65f41 solid 2px;
+  background-color: #47484b;
+  height: 120px;
+  text-align: center;
+  padding: 25px;
+  color: #edf0f1;
+  font-size: 17px;
+}
+
+footer img {
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
